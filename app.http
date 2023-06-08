@@ -1,0 +1,45 @@
+
+### Returns a list of all movie names in the movie table API1
+GET http://localhost:3000/movies/
+
+### Creates a new movie in the movie table API2.
+
+POST http://localhost:3000/movies/
+
+content-type : application/json
+{
+  "directorId": 6,
+  "movieName": "Jurassic Park",
+  "leadActor": "Jeff Goldblum"
+}
+
+### Returns a movie based on the movie ID API3
+
+GET http://localhost:3000/movies/:46/
+
+
+### Updates the details of a movie in the movie table based on the movie ID API 4
+
+PUT http://localhost:3000/movies/:47/
+
+content-type : "application/json"
+
+{
+  "directorId": 24,
+  "movieName": "Thor",
+  "leadActor": "Christopher Hemsworth"
+}
+
+### Deletes a movie from the movie table based on the movie ID API5
+
+DELETE http://localhost:3000/movies/:46/ 
+
+### Returns a list of all directors in the director table API6
+GET http://localhost:3000/directors/
+
+### Returns a list of all movie names directed by a specific director API 7
+
+GET http://localhost:3000/directors/:4/movies/
+
+
+
